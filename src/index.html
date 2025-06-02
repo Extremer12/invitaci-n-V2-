@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación Especial - Encuentro de Iglesias</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+    <!-- Botón volver arriba -->
+    <button id="scrollTopBtn" class="scroll-top-btn" title="Volver arriba" aria-label="Volver arriba">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    
+    <header class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">Invitación Especial</h1>
+            <p class="hero-subtitle">Encuentro de Iglesias</p>
+            <div class="countdown-container">
+                <h3>Faltan:</h3>
+                <div id="countdown" class="countdown"></div>
+            </div>
+        </div>
+        <div class="hero-decoration">
+            <i class="fas fa-dove"></i>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="event-card">
+            <div class="card-header">
+                <i class="fas fa-calendar-alt"></i>
+                <h2>Detalles del Evento</h2>
+            </div>
+            <div class="event-info">
+                <div class="info-item">
+                    <i class="fas fa-calendar-day"></i>
+                    <div>
+                        <strong>Fecha:</strong>
+                        <span>Sábado 14 de Junio</span>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <strong>Horario:</strong>
+                        <span>10:00 - 20:00 hs</span>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-heart"></i>
+                    <div>
+                        <strong>Propósito:</strong>
+                        <span>Ayuno y Oración</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="activities-section">
+            <h2><i class="fas fa-star"></i> Actividades Programadas</h2>
+            <div class="activities-grid">
+                <div class="activity-card">
+                    <i class="fas fa-microphone"></i>
+                    <h3>Testimonios</h3>
+                    <p>Compartiremos experiencias de fe</p>
+                </div>
+                <div class="activity-card">
+                    <i class="fas fa-music"></i>
+                    <h3>Cantos de Alabanza</h3>
+                    <p>Adoración y música cristiana</p>
+                </div>
+                <div class="activity-card">
+                    <i class="fas fa-book-open"></i>
+                    <h3>Lectura Bíblica</h3>
+                    <p>Meditación en la Palabra</p>
+                </div>
+                <div class="activity-card">
+                    <i class="fas fa-theater-masks"></i>
+                    <h3>Sketches</h3>
+                    <p>Representaciones teatrales</p>
+                </div>
+                <div class="activity-card">
+                    <i class="fas fa-praying-hands"></i>
+                    <h3>Ayuno y Oración</h3>
+                    <p>Tiempo de comunión espiritual</p>
+                </div>
+                <div class="activity-card">
+                    <i class="fas fa-coffee"></i>
+                    <h3>Break Compartido</h3>
+                    <p>Trae tu mate y algo para compartir</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="participation-section">
+            <div class="participation-card">
+                <h2><i class="fas fa-users"></i> ¿Cómo Participar?</h2>
+                <div class="participation-options">
+                    <div class="option">
+                        <i class="fas fa-pray"></i>
+                        <h4>Ayuno y Oración</h4>
+                        <p>Únete al ayuno desde las 10:00 hasta las 20:00 hs</p>
+                    </div>
+                    <div class="option">
+                        <i class="fas fa-utensils"></i>
+                        <h4>Break Compartido</h4>
+                        <p>Si no puedes ayunar, participa del break. Trae tu mate y algo para compartir</p>
+                    </div>
+                </div>
+                <div class="call-to-action">
+                    <p class="highlight">¡Tu iglesia puede participar, no faltes!</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="churches-section">
+            <h2><i class="fas fa-church"></i> Iglesias Participantes</h2>
+            <div class="churches-grid">
+                <div class="church-card">
+                    <div class="church-icon">
+                        <div class="shine-effect"></div>
+                    </div>
+                    <h3>El Arca</h3>
+                    <p class="church-description">Comunidad cristiana comprometida con la fe y el servicio</p>
+                    <div class="participation-status">
+                        <i class="fas fa-check-circle"></i>
+                        Confirmada
+                    </div>
+                </div>
+                <div class="church-card">
+                    <div class="church-icon">
+                        <div class="shine-effect"></div>
+                    </div>
+                    <h3>Emanuel</h3>
+                    <p class="church-description">Unidos en Cristo para la adoración y la comunión</p>
+                    <div class="participation-status">
+                        <i class="fas fa-check-circle"></i>
+                        Confirmada
+                    </div>
+                </div>
+                <div class="church-card">
+                    <div class="church-icon">
+                        <div class="shine-effect"></div>
+                    </div>
+                    <h3>Ministerio Palabra de Dios</h3>
+                    <p class="church-description">Difundiendo la palabra con amor y dedicación</p>
+                    <div class="participation-status">
+                        <i class="fas fa-check-circle"></i>
+                        Confirmada
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="map-section">
+            <h2><i class="fas fa-map-marker-alt"></i> Ubicación</h2>
+            <div class="map-container">
+                <div id="mapa" class="interactive-map"></div>
+                <div class="map-info">
+                    <p><i class="fas fa-map-marker-alt"></i> San Juan, Argentina</p>
+                    <button class="location-btn" onclick="openGoogleMaps()">
+                        <i class="fab fa-google"></i> Ver en Google Maps
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Monte de Sion</p>
+            <div class="social-links">
+                <a href="https://www.facebook.com/Iglesiiamontedesion"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.youtube.com/@GeneracionPrivilegiada"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.instagram.com/monte_de_sioon/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@generacionprivilegiada"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
